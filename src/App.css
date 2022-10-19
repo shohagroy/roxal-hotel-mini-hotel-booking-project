@@ -6,3 +6,44 @@
   background-position: center;
   background-size: cover;
 }
+
+
+.image-shadow{
+  /* width: 100px; */
+  position: relative;
+  z-index: 1
+}
+
+.image-shadow::before{
+  position: absolute;
+  top: 0;
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: #EEEAE4;
+  transform: rotate(7deg);
+  z-index: -10;
+  transition: all 0.5s;
+}
+
+.image-shadow:hover::before{
+  transform: rotate(0);
+}
+
+
+.home-page-book-now-container{
+  background-image: url('./assets/guest_bg.jpg');
+  height: 100vh;
+  width: 100%;
+}
+
+
+.book-now-container:hover img{
+  transform: scale(1.05);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.book-now-container:hover .price{
+  color: white;
+}
