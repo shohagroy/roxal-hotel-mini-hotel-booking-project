@@ -1,8 +1,10 @@
 import React from 'react';
 import Carousel from './Carousel';
+import Footer from './Footer';
 import Header from './Header';
 import Hero from './Hero';
 import HomeBookNow from './HomeBookNow';
+import SpecialDescover from './SpecialDescover';
 import SpecialOffer from './SpecialOffer';
 
 const Main = () => {
@@ -13,6 +15,8 @@ const Main = () => {
             <SpecialOffer/>
             <HomeBookNow/>
             <Carousel/>
+            <SpecialDescover/>
+            <Footer/>
         </div>
     );
 };
